@@ -1,0 +1,7 @@
+const mongoose = require('mongoose')
+const bcrypt = require('bcrypt')
+const userSchema = new mongoose.Schema({
+    user_name: {type: String, default: ""},
+    password: String
+})
+module.exports = mongoose.model("user", userSchema)
